@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik-Regular.woff2') format('woff2'),
+        url('Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik-Medium.woff2') format('woff2'),
+        url('Graphik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('Graphik-Light.woff2') format('woff2'),
+        url('Graphik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+html,
+body{
+	font-family: Graphik,sans-serif;
+	height: 100%;
+}
+body{
+	display: flex;
+}
+.sidebar{
+	width: 252px;
+	background: #4c52bc;
+	display: flex;
+	flex-direction: column;
+	
+}
+.sidebar .logo{
+	padding:10px 0 25px 42px;
+}
+.sidebar .logo a {
+	display: block;
+}
+.sidebar .logo a img{
+	width: 150px;
+	height: 150px;
+}
+.sidebar .menu ul li a{
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 40px;
+	font-size: 14px;
+	color: rgba(255, 255, 255, .6);
+	transition:background 1s ;
+	-webkit-transition:background 1s ;
+	-moz-transition:background 1s ;
+	-ms-transition:background 1s ;
+	-o-transition:background 1s ;
+
+}	
+
+.sidebar .menu ul li a:hover{
+	color: #fff;
+	background: linear-gradient(to left, transparent, rgba(255,255,255, .08));
+	text-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+	
+}
+.sidebar .menu ul li a:focus{
+	color: #fff;
+	background: linear-gradient(to left, transparent, rgba(255,255,255, .08));
+}
+.sidebar .menu ul li a:active{
+	color: #fff;
+	background: linear-gradient(to left, transparent, rgba(255,255,255, .08));
+	text-shadow: 2 2px 4px 0 rgb(0, 0, 0, .5);
+
+}
+.sidebar .storage{
+	padding: 0 40px 35px;
+	margin-top: auto;
+}
+.sidebar .storage .storage-bar{
+	width: 100%;
+	height: 6px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	background: #30358a;
+}
+.sidebar .storage .storage-bar span  {
+	width: auto;
+	height: 6px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	background: #f8d9af;
+	display: block;
+}
+content{
+	flex: 1;
+}
+
+
+
+
